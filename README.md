@@ -21,7 +21,7 @@ exports.store = function (byteString, fileDir, fileName, mimeType, success, erro
     exec(success, error, 
         'CordovaAndroidMediaStore', 
         'store', 
-        [byteString, fileDir, fileName]);
+        [byteString, fileDir, fileName, mimeType]);
 };
 ```
 
